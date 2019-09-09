@@ -1,3 +1,6 @@
+.foto-card {
+    max-height: 163px !important;
+}
 
 /*input[type=text] {
     width: 13px;
@@ -44,28 +47,28 @@
     height: 300px;
 }
 
-.botao{
+.botao {
     position: absolute;
     bottom: 22%;
     left: 18%;
 }
 
-.botao-corporal{
+.botao-corporal {
     position: absolute;
     bottom: 22%;
     left: 16%;
 }
 
-.logo{
-width: 150px;
+.logo {
+    width: 150px;
 }
 
-.botoes-inicio{
+.botoes-inicio {
     margin-left: 7rem !important;
 }
 
-#menu{
-font-size: 20px !important;
+#menu {
+    font-size: 20px !important;
 }
 
 .jumbotron {
@@ -142,7 +145,7 @@ color: #639bcf; - Azul
 */
 
 .footer {
-    background-image: url(../images/footer.png) ;
+    background-image: url(../images/footer.png);
     color: #efefef;
     padding: 30px 0;
 }

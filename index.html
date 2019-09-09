@@ -63,7 +63,7 @@
 </nav>
 
 <!-- <img src="assets/images/panoramica1.jpg">  -->
-<header id="header" class=" d-none d-md-block mb-4" style="margin-top: 120px;">
+<header id="header" class="mb-4" style="margin-top: 120px;">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -74,17 +74,23 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="./assets/images/sobrancelha-nova.png" alt="Primeiro Slide">
-                <button class="botao btn btn-outline-secondary my-2 my-sm-0" type="submit">AGENDE AQUI</button>
+                <button class="botao btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">AGENDE
+                    AQUI
+                </button>
 
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="assets/images/facial-nova.png" alt="Segundo Slide">
-                <button class="botao btn btn-outline-secondary my-2 my-sm-0" type="submit">AGENDE AQUI</button>
+                <button class="botao btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">AGENDE
+                    AQUI
+                </button>
 
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="./assets/images/corporal-nova.png" alt="Terceiro Slide">
-                <button class="botao-corporal btn btn-outline-secondary my-2 my-sm-0" type="submit">AGENDE AQUI</button>
+                <button class="botao-corporal btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">
+                    AGENDE AQUI
+                </button>
 
             </div>
         </div>
@@ -99,150 +105,33 @@
     </div>
 </header>
 
-
-<div class="modal fade" id="reserva">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="modal-title">Reserva de Passeios e Excursões</span>
-                <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="id-form" action="">
-                    <fieldset class="form-group">
-                        <legend class="font-weight-bold">Informações Pessoais</legend>
-
-                        <div class="form-group row">
-                            <label for="nome" class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Nome</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control form-control-sm" id="nome"
-                                       placeholder="Informe seu nome">
-                                <div class="invalid-feedback">
-                                    Este campo deve ser informado.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Sexo</label>
-                            <div class="col-lg-10">
-                                <div class="form-check">
-                                    <input id="sexo-masc" type="radio" name="sexo" value"M" class="form-check-input">
-                                    <label for="sexo-masc" class="form-check-label">
-                                        Masculino
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="sexo-fem" type="radio" name="sexo" value"F" class="form-check-input">
-                                    <label for="sexo-fem" class="form-check-label">
-                                        Feminino
-                                    </label>
-                                </div>
-                                <div id="sexo-feedback" class="invalid-feedback">
-                                    Este campo deve ser informado.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="endereco"
-                                   class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Endereço</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control form-control-sm" id="endereco"
-                                       placeholder="Informe seu endereço">
-                                <div class="invalid-feedback">
-                                    Este campo deve ser informado.
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-group" style="margin-bottom: 0px;">
-                        <legend class="font-weight-bold">Informações do Passeio/Excursão</legend>
-                        <div class="form-group row">
-                            <label for="passeio"
-                                   class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Passeio</label>
-                            <div class="col-lg-10">
-                                <select class="form-control form-control-sm" id="passeio">
-                                    <option selected value="">--- selecione um passeio ---</option>
-                                    <option value="1">Arcos da Lapa</option>
-                                    <option value="2">Ciclovia</option>
-                                    <option value="3">Copacabana</option>
-                                    <option value="4">Cristo Redentor</option>
-                                    <option value="5">Maracanã</option>
-                                    <option value="6">Pão de Açucar</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Este campo deve ser informado.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Excursões</label>
-                            <div class="col-lg-10">
-                                <div class="form-check">
-                                    <input id="ilha" type="checkbox" name="ilha" class="form-check-input">
-                                    <label for="ilha" class="form-check-label">
-                                        Ilha Grande
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="paraty" type="checkbox" name="paraty" class="form-check-input">
-                                    <label for="paraty" class="form-check-label">
-                                        Paraty
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input id="buzios" type="checkbox" name="buzios" class="form-check-input">
-                                    <label for="buzios" class="form-check-label">
-                                        Buzios e Arraial do Cabo
-                                    </label>
-                                </div>
-                                <div id="feedback-excursao" class="invalid-feedback">
-                                    Este campo deve ser informado.
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="form-group row">
-                        <div class="col-lg-10 offset-lg-2">
-                            <button type="submit" class="btn btn-primary btn-sm">
-                                Enviar
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="container mb-4">
-    <div class="d-block d-md-none jumbotron text-center mb-4" style="margin-top: 90px;">
-         <span class="font-weight-bold" style="font-size: 18px;">Empresa especializada em passeios e excursões no Rio de
-            Janeiro.</span>
-        <br>
-        <br>
-        <span style="font-size: 16px;">Veja abaixo os passeios mais solicitados pelos nossos clientes.</span>
-    </div>
+    <!--    <div class="d-block d-md-none jumbotron text-center mb-4" style="margin-top: 90px;">-->
+    <!--         <span class="font-weight-bold" style="font-size: 18px;">Empresa especializada em passeios e excursões no Rio de-->
+    <!--            Janeiro.</span>-->
+    <!--        <br>-->
+    <!--        <br>-->
+    <!--        <span style="font-size: 16px;">Veja abaixo os passeios mais solicitados pelos nossos clientes.</span>-->
+    <!--    </div>-->
 
-    <h4 id="passeios" class="mb-0">Nossos Passeios</h4>
+    <h4 id="passeios" class="mb-0">Procedimentos mais procurados:</h4>
 
     <div class="row mb-4">
         <div class="col-md-6 col-lg-4">
-            <div class="card mt-3">
-                <img class="card-img-top" src="assets/images/p-ciclovia.jpg" alt="Ciclovias">
+            <div class="card  mt-3">
+                <img class="foto-card card-img-top" src="assets/images/sobrancelha-fio-a-fio.png" alt="Ciclovias">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Ciclovias da Cidade</h5>
-                        <p class="text-warning font-weight-bold">Passeio diário</p>
+                        <h5>Sobrancelha fio-a-fio</h5>
+                        <p class="text-secondary font-weight-bold">Mais procurado</p>
                     </div>
-                    <p class="card-text text-justify">O Rio possui uma extensa malha de ciclovias. As principais vias
-                        começam na Marina da Glória,
-                        próxima ao centro da Cidade, passando por toda a Zona Sul até o Leblon.</p>
+                    <p class="card-text text-justify">A sobrancelha é redesenhada com a implementação de pigmentos
+                        orgânicos, que variam de acordo com cada caso. O resultado é uma sobrancelha definida e
+                        naturalmente bonita, com um design que dá mais personalidade à expressão facial.</p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button class="btn btn-outline-primary btn-sm">Mais informações...</button>
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
                     </div>
                 </div>
             </div>
@@ -250,23 +139,20 @@
 
         <div class="col-md-6 col-lg-4">
             <div class="card mt-3">
-                <img class="card-img-top" src="assets/images/p-copacabana.jpg" alt="Copacabana">
+                <img class="card-img-top foto-card" src="assets/images/LIMPEZA-PELE-RPOFUNDA.jpg" alt="Copacabana">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Praia de Copacabana</h5>
-                        <p class="text-warning font-weight-bold">Passeio terças e quintas</p>
+                        <h5>Limpeza de pele</h5>
+                        <p class="text-secondary font-weight-bold">Mais recomendado</p>
                     </div>
-                    <p class="card-text text-justify">Copacabana que é também conhecida como
-                        <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="top" title="<b>Tom Jobim:</b><br>Copacabana, princesinha do mar
-                        Pelas manhãs tu és a vida a cantar
-                        E a tardinha o sol poente
-                        Deixa sempre uma saudade na gente">"Princesinha do Mar"</a>
-                        em função de uma famosa canção em sua homenagem, é um dos locais
-                        mais conhecidos do Brasil e do mundo.</p>
+                    <p class="card-text text-justify">
+                        A limpeza de pele é um procedimento estético
+                        que tem como objetivo remover cravos e impurezas da pele. A limpeza de pele também remove o
+                        milium, que são pequenos cistos salientes causados pelo acúmulo de óleo e pele nos poros.</p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button class="btn btn-outline-primary btn-sm">Mais informações...</button>
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
                     </div>
                 </div>
             </div>
@@ -274,19 +160,20 @@
 
         <div class="col-md-6 col-lg-4">
             <div class="card mt-3">
-                <img class="card-img-top" src="assets/images/p-cristo-redentor.jpg" alt="Cristo Redentor">
+                <img class="card-img-top foto-card" src="assets/images/drenagem-e-massagem.jpg" alt="Cristo Redentor">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Cristo Redentor</h5>
-                        <p class="text-warning font-weight-bold">Passeio diário</p>
+                        <h5>Massagem modeladora</h5>
+                        <p class="text-secondary font-weight-bold">Modele o corpo</p>
                     </div>
-                    <p class="card-text text-justify">Entre os principais pontos turísticos da cidade,
-                        estão o Corcovado, com a estátuado Cristo Redentor e o Pão de açucar.
-                        Ambos fornecem uma vista magnifíca da cidade.</p>
+                    <p class="card-text text-justify">A massagem modeladora é feita com movimentos mais
+                        fortes e profundos, com o intuito de atingir camadas mais profundas da pele. A massagem atua
+                        também na circulação, dessa forma, ela é eficiente contra a celulite.
+                        </p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button class="btn btn-outline-primary btn-sm">Mais informações...</button>
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
                     </div>
                 </div>
             </div>
@@ -294,7 +181,7 @@
 
         <div class="col-md-6 col-lg-4">
             <div class="card mt-3">
-                <img class="card-img-top" src="assets/images/p-arcos-da-lapa.jpg" alt="Lapa">
+                <img class="card-img-top foto-card" src="assets/images/p-arcos-da-lapa.jpg" alt="Lapa">
                 <div class="card-body">
                     <div class="card-title text-center">
                         <h5>Arcos da Lapa</h5>
