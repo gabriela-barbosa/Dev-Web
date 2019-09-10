@@ -1,6 +1,3 @@
-.foto-card {
-    max-height: 163px !important;
-}
 
 /*input[type=text] {
     width: 13px;
@@ -40,12 +37,6 @@
     font-size: 25px;
 }
 
-.bgimage {
-    background-image: url('../images/flowers.png');
-    background-position: center center;
-    background-size: cover;
-    height: 300px;
-}
 
 .botao {
     position: absolute;
@@ -60,23 +51,6 @@
 }
 
 
-.logo {
-    width: 150px;
-}
-
-.botoes-inicio {
-    margin-left: 7rem !important;
-}
-
-#menu {
-    font-size: 20px !important;
-}
-
-.jumbotron {
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
 /* .carousel-item img {
    width: 100%;
    height: 350px;
@@ -85,10 +59,6 @@
 legend {
    font-size: 1.1rem;
 } */
-
-.modal-title {
-    font-size: 1.2rem;
-}
 
 .media img {
     width: 180px;
@@ -145,29 +115,6 @@ padding: 30px 0; - top e bottom padding de 30px e
 color: #639bcf; - Azul
 */
 
-li {
-    color: grey !important;
-}
-
-li a {
-    color: grey !important;
-}
-
-
-.footer {
-    background-image: url(../images/footer2.png);
-    color: #efefef;
-    padding: 30px 0;
-}
-
-.retangulo {
-    width: 100%;
-    height: 100%;
-    border-radius: 21px;
-    background: rgba(248, 249, 250, 0.9);
-    padding-left: 25px;
-    padding-top: 20px;
-}
 
 
 
