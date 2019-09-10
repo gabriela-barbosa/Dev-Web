@@ -19,8 +19,16 @@
         </button>
         <div class="collapse navbar-collapse botoes-inicio" id="menu">
             <div class="navbar-nav mr-0 ml-auto">
-                <a class="nav-link nav-item" href="#home">Home</a></li>
-                <a class="nav-link nav-item" href="#servicos">Serviços</a></li>
+                <a class="nav-link nav-item" href="#">Home</a></li>
+                <div class="dropdown">
+                    <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Serviços</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="facial.html">Estética Facial</a>
+                        <a class="dropdown-item" href="#corporal">Estética Corporal</a>
+                        <a class="dropdown-item" href="#depilacaoCera">Depilação a Cera</a>
+                    </div>
+                </div>
+                <!--                <a class="nav-link nav-item" href="#servicos">Serviços</a></li>-->
                 <a class="nav-link nav-item" href="#galeria">Galeria</a></li>
             </div>
             <div class=" mr-1 ml-1">
@@ -29,34 +37,16 @@
                 </a>
             </div>
             <div class="navbar-nav ml-0 mr-auto">
-                <a class="nav-link nav-item" href="#sobrenos">Sobre nós</a></li>
-                <a class="nav-link nav-item" href="#contaos">Contatos</a></li>
+                <a class="nav-link nav-item" href="#sobreNos">Sobre nós</a></li>
+                <a class="nav-link nav-item" href="#contatos">Contatos</a></li>
             </div>
-            <!--<div class="dropdown">-->
-            <!--<a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Passeios Culturais</a>-->
-            <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" href="#">Contato</a>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<a class="nav-link nav-item" href="#reserva" data-toggle="modal">-->
-            <!--Reservas-->
-            <!--</a>-->
         </div>
 
         <div class="navbar-nav">
             <div class="form-group has-search">
-                <!--<input class="form-control mr-sm-2" type="text" placeholder="Search">-->
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Login</button>
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Cadastrar</button>
             </div>
-            <!--<div class="form-group has-search">-->
-            <!--<span class="fa fa-search form-control-feedback"></span>-->
-            <!--<input type="text" class="form-control" placeholder="Search">-->
-            <!--</div>-->
-            <!--<a class="nav-link nav-item" href="#">-->
-            <!--<i id="user" class="fa fa-fw fa-user-circle"></i>-->
-            <!--&lt;!&ndash;                    <i class="fas fa-sign-in-alt"></i>&ndash;&gt;-->
-            <!--</a>-->
         </div>
     </div>
     </div>
@@ -65,40 +55,40 @@
 <!-- <img src="assets/images/panoramica1.jpg">  -->
 <header id="header" class="mb-4" style="margin-top: 120px;">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselInicio" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselInicio" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselInicio" data-slide-to="1"></li>
+            <li data-target="#carouselInicio" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="./assets/images/sobrancelha-nova.png" alt="Primeiro Slide">
+                <img class="d-block w-100" src="./assets/images/sobrancelha-nova.png" alt="Design de Sobrancelha">
                 <button class="botao btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">AGENDE
                     AQUI
                 </button>
 
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/facial-nova.png" alt="Segundo Slide">
+                <img class="d-block w-100" src="assets/images/facial-nova.png" alt="Tratamentos Faciais">
                 <button class="botao btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">AGENDE
                     AQUI
                 </button>
 
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/corporal-nova.png" alt="Terceiro Slide">
+                <img class="d-block w-100" src="./assets/images/corporal-nova.png" alt="Tratamentos Corporais">
                 <button class="botao-corporal btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">
                     AGENDE AQUI
                 </button>
 
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselInicio" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselInicio" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Próximo</span>
         </a>
@@ -114,15 +104,15 @@
     <!--        <span style="font-size: 16px;">Veja abaixo os passeios mais solicitados pelos nossos clientes.</span>-->
     <!--    </div>-->
 
-    <h4 id="passeios" class="mb-0">Procedimentos mais procurados:</h4>
+    <h4 id="procedimentos" class="mb-0 pt-4 pb-4">Procedimentos mais procurados:</h4>
 
     <div class="row mb-4">
         <div class="col-md-6 col-lg-4">
-            <div class="card  mt-3">
-                <img class="foto-card card-img-top" src="assets/images/sobrancelha-fio-a-fio.png" alt="Sobrancelha">
+            <div id="sobrancelhaFioaFio" class="card shadow mt-3">
+                <img class=" card-img-top" src="assets/images/eyebrow2.jpg" alt="Sobrancelha">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Sobrancelha fio-a-fio</h5>
+                        <h5>Sobrancelha Fio a Fio</h5>
                         <p class="text-secondary font-weight-bold">Mais procurado</p>
                     </div>
                     <p class="card-text text-justify">A sobrancelha é redesenhada com a implementação de pigmentos
@@ -131,40 +121,41 @@
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="location.href='facial.html#sobrancelhaFioaFio';">Mais informações...</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card mt-3">
-                <img class="card-img-top foto-card" src="assets/images/LIMPEZA-PELE-RPOFUNDA.jpg" alt="Limpeza de Pele">
+            <div id="limpeza" class="card shadow mt-3">
+                <img class="card-img-top " src="assets/images/cleaning.jpg" alt="Limpeza de Pele">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Limpeza de pele</h5>
+                        <h5>Limpeza de Pele</h5>
                         <p class="text-secondary font-weight-bold">Mais recomendado</p>
                     </div>
                     <p class="card-text text-justify">
                         A limpeza de pele é um procedimento estético
                         que tem como objetivo remover cravos e impurezas da pele. A limpeza de pele também remove o
-                        milium, que são pequenos cistos salientes causados pelo acúmulo de óleo e pele nos poros.</p>
+                        milium, que são pequenos cistos salientes causados pelo acúmulo de óleo e pele nos
+                        poros.</p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="location.href='facial.html#limpeza'">Mais informações...</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card mt-3">
-                <img class="card-img-top foto-card" src="assets/images/drenagem-e-massagem.jpg"
-                     alt="Massagem modeladora">
+            <div id="massagem" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/massagem-modeladora.jpg"
+                     alt="Massagem Modeladora">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Massagem modeladora</h5>
+                        <h5>Massagem Modeladora</h5>
                         <p class="text-secondary font-weight-bold">Modele o corpo</p>
                     </div>
                     <p class="card-text text-justify">A massagem modeladora é feita com movimentos mais
@@ -181,18 +172,45 @@
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card mt-3">
-                <img class="card-img-top foto-card" src="assets/images/Peeling-diamante.jpg" alt="peeling">
+            <div id="peeling" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/peeling.jpg" alt="Peeling">
                 <div class="card-body">
                     <div class="card-title text-center">
                         <h5>Peeling de Diamante</h5>
                         <p class="text-secondary font-weight-bold">Renove a pele</p>
                     </div>
                     <p class="card-text text-justify">O peeling de diamante é
-                        um tratamento estético que faz uma esfoliação profunda da pele, retirando as células mortas da
+                        um tratamento estético que faz uma esfoliação profunda da pele, retirando as células mortas
+                        da
                         camada mais superficial, sendo muito eficiente para retirar as manchas e combater as rugas
-                        porque estimula a produção de colágeno e elastina, que são fundamentais para manter a pele firme
+                        porque estimula a produção de colágeno e elastina, que são fundamentais para manter a pele
+                        firme
                         e uniforme.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm" onclick="location.href='facial.html#peeling'">Mais informações...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div id="drenagem" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/drenagem%20(1).jpg" alt="Drenagem">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Drenagem Linfática</h5>
+                        <p class="text-secondary font-weight-bold">Retenção de líquido nunca mais</p>
+                    </div>
+                    <p class="card-text text-justify">A drenagem linfática é uma técnica de massagem que tem por
+                        objetivo estimular o sistema linfático - uma rede complexa de vasos que movem fluidos pelo
+                        corpo
+                        - a trabalhar de forma mais acelerada. Entre os principais benefícios do método estão a
+                        redução
+                        da retenção de líquido, ativação da circulação sanguínea, combate à celulite e até o
+                        relaxamento
+                        corporal.</p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
@@ -203,265 +221,128 @@
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card mt-3">
-                <img class="card-img-top" src="assets/images/drenagem-linfatica.jpg" alt="drenagem">
+            <div id="depilacao" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/depilacao.jpg" alt="Depilação">
                 <div class="card-body">
                     <div class="card-title text-center">
-                        <h5>Drenagem Linfática</h5>
-                        <p class="text-warning font-weight-bold">Retenção de líquido nunca mais</p>
+                        <h5>Depilação a Cera</h5>
+                        <p class="text-secondary font-weight-bold">Pele livre de pelos</p>
                     </div>
-                    <p class="card-text text-justify">A drenagem linfática é uma técnica de massagem que tem por
-                        objetivo estimular o sistema linfático - uma rede complexa de vasos que movem fluidos pelo corpo
-                        - a trabalhar de forma mais acelerada. Entre os principais benefícios do método estão a redução
-                        da retenção de líquido, ativação da circulação sanguínea, combate à celulite e até o relaxamento
-                        corporal.</p>
+                    <p class="card-text text-justify">A depilação a cera proporciona um toque mais suave e delicado
+                        da
+                        pele. A cera faz a retirada do fio pela sua raiz. Ao atingir a raiz, a
+                        enfraquece e proporciona o prolongamento do processo de crescimento, que pode chegar a durar
+                        até
+                        25 dias. Ela também passa a enfraquecer os pelos, diminuindo sua quantidade e deixando os
+                        fios
+                        cada vez mais finos.</p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button class="btn btn-outline-primary btn-sm">Mais informações...</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-3">
-                <img class="card-img-top" src="assets/images/p-pao-de-acucar.jpg" alt="Maracanã">
-                <div class="card-body">
-                    <div class="card-title text-center">
-                        <h5>Pão de açucar</h5>
-                        <p class="text-warning font-weight-bold">Passeio diário</p>
-                    </div>
-                    <p class="card-text text-justify">Localizado no bairro da Urca, o bondinho é uma das
-                        principais atrações turísticas da cidade. Liga a Praia Vermelha ao morro
-                        da Urca e ao morro do Pão de açúcar. O bondinho foi cenário
-                        do filme <a onclick="return false;" href="#" tabindex="0" data-trigger="focus"
-                                    data-toggle="popover" data-title="007 contra o Foguete da Morte"
-                                    data-placement="bottom"
-                                    data-content="Filme franco-britânico de acção, aventura,
-                                               espionagem e ficção científica de 1979, o
-                                               11.º da série James Bond com Roger Moore
-                                               no papel do agente secreto.">
-                            007 contra o Foguete da Morte</a>, de 1979.</p>
-                </div>
-                <div class="card-footer">
-                    <div class="text-right">
-                        <button class="btn btn-outline-primary btn-sm">Mais informações...</button>
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <h4 id="excursoes" class="mb-3">Nossas Excursões</h4>
-
-    <div id="accordion" class="accordion mb-4">
-        <div class="card">
-            <div id="header-ilha" class="card-header">
-                <h5 class="mb-0">
-                    <a data-toggle="collapse" href="#ilha" aria-expanded="true" aria-controls="ilha">
-                        Ilha Grande
-                    </a>
-                </h5>
-            </div>
-
-            <div id="ilha" class="collapse show" data-parent="#accordion" aria-labelledby="header-ilha">
-                <div class="card-body">
-                    <div class="row">
-
-                        <div class="col-lg-6">
-                            <div class="media">
-                                <img class="img-fluid" src="assets/images/e-vila-abraao.jpg" alt="Vila do abraão">
-                                <div class="media-body ml-3">
-                                    <h5>Vila do abraão</h5>
-                                    <span class="texto-media-body">É o principal local de chegada à Ilha Grande.
-                                 Lá você encontra pousadas, campings, restaurantes, etc.</span>
-                                </div>
+    <div class="row">
+        <div class="d-md-flex flex-md-equal py-4 col-12 p-0 w-100 my-md-3">
+            <div class="bg-dark pt-3 w-100 pt-md-5 text-center text-white overflow-hidden" style="border-radius: 21px;">
+                <div class="my-2 py-2">
+                    <h2 class="display-5">Agende Gratuitamente uma Avaliação</h2>
+                    <p class="lead">Preencha os dados que, assim que possível, entraremos em contato</p>
+                    <form>
+                        <div class="row mx-4 my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Digite o seu nome">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Digite o seu e-mail">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Digite o seu telefone">
                             </div>
                         </div>
-
-                        <div class="col-lg-6">
-                            <div class="media">
-                                <img class="img-fluid" src="assets/images/e-lagoa-azul.jpg" alt="Lagoa azul">
-                                <div class="media-body ml-3">
-                                    <h5>Lagoa azul</h5>
-                                    <span class="texto-media-body">Um local muito lindo com água azul turquesa
-                                 e muitos peixes. Só é possível chegar lá de barco.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="media">
-                                <img class="img-fluid" src="assets/images/e-praia-do-aventureiro.jpg"
-                                     alt="Praia do aventureiro">
-                                <div class="media-body ml-3">
-                                    <h5>Praia do aventureiro</h5>
-                                    <span class="texto-media-body">Uma das mais bonitas da Ilha Grande.
-                                 A praia mede 600 metros e o mar é ótimo para a prática do Surf.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="media">
-                                <img class="img-fluid" src="assets/images/e-lopes-mendes.jpg" alt="Lopes Mendes">
-                                <div class="media-body ml-3">
-                                    <h5>Lopes Mendes</h5>
-                                    <span class="texto-media-body">A mais famosa praia da Ilha Grande. São 3 km
-                                 de areia muito branca e água cristalina.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="altura-da-linha">
-                        <button class="btn btn-outline-primary btn-block btn-sm">Mais Informações</button>
-                        <a class="btn btn-outline-secondary btn-block btn-sm" href="cadastro.html">Contratar</a>
-                    </div>
+                        <button type="button" class="btn btn-primary btn-lg">Agende aqui</button>
+                    </form>
                 </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div id="header-paraty" class="card-header">
-                <h5 class="mb-0"><a data-toggle="collapse" href="#paraty" aria-expanded="true"
-                                    aria-controls="paraty">Paraty</a></h5>
-            </div>
-
-            <div id="paraty" class="collapse" data-parent="#accordion" aria-labelledby="header-paraty">
-                <div class="card-body">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                        terry richardson ad squid. Wolf moon officia aute, non cupidatat
-                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                    </p>
-
-                    <div class="alert alert-info alert-dismissible fade show">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="alert-heading">Nemo enim Ipsam</h4>
-                        <p class="mb-2">At vero eos et accusamus et iusto odio dignissimos
-                            ducimus qui blanditiis praesentium voluptatum deleniti atque
-                            corrupti quos dolores et quas molestias excepturi sint
-                            occaecati.</p>
-                        <a class="alert-link" href="#">Quaerat voluptatem!</a>
-                    </div>
-
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                        quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                        sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                        magnam aliquam quaerat voluptatem.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div id="header-buzios" class="card-header">
-                <h5 class="mb-0"><a data-toggle="collapse" href="#buzios" aria-expanded="true"
-                                    aria-controls="buzios">Buzios e Arraial do Cabo</a></h5>
-            </div>
-
-            <div id="buzios" class="collapse" data-parent="#accordion" aria-labelledby="header-buzios">
-                <div class="card-body">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                        single-origin coffee nulla assumenda shoreditch et.</p>
-                </div>
+                <!--        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
             </div>
         </div>
     </div>
-
-    <div class="jumbotron mb-4">
-
-        <h4 class="mb-3">Depoimentos sobre Excursões</h4>
-
-        <div class="row">
-            <div class="col-md-6">
-                <blockquote class="blockquote">
-                    <p class="mb-0">Adipisci veritatis esse expedita odit neque quam! Repellat
-                        quas ad cum porro amet, maiores, dolores in magni ea enim. Commodi
-                        quidem consequuntur animi pariatur cumque distinctio.
-                    </p>
-                    <footer class="blockquote-footer">
-                        Luis Gustavo Pereira Filho
-                    </footer>
-                </blockquote>
-            </div>
-
-            <div class="col-md-6">
-                <blockquote class="blockquote">
-                    <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-                    <footer class="blockquote-footer">
-                        Sergio albuquerque
-                    </footer>
-                </blockquote>
-            </div>
-
-            <div class="col-md-6">
-                <blockquote class="blockquote">
-                    <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-                        ratione voluptatem sequi nesciunt.</p>
-                    <footer class="blockquote-footer">
-                        Pedro arnaldo Soares
-                    </footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
+    <!--      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">-->
+    <!--        <div class="my-3 p-3">-->
+    <!--          <h2 class="display-5">Outro título</h2>-->
+    <!--          <p class="lead">E outra descrição mais engraçadinha ainda.</p>-->
+    <!--        </div>-->
+    <!--        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    <!--      </div>-->
+    <!--    </div>-->
 </div>
 
 <div class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-7">
-                <h5>Nossas Excursões</h5>
-                <ul class="list-unstyled">
-                    <li><i>Baia da </i><a href='#excursoes'> Ilha Grande</a></li>
-                    <li><a href='#excursoes'>Paraty</a></li>
-                    <li><a href='#excursoes'>Búzios e arraial do Cabo</a></li>
-                </ul>
-            </div>
+        <div class="shadow-sm retangulo">
+            <div class="row">
+                <div class="col-lg-4 col-sm-7">
+                    <h5>Procedimentos Populares</h5>
+                    <ul class="">
+                        <li><a href='#sobrancelhaFioaFio'> Sobrancelha Fio a Fio</a></li>
+                        <li><a href='#limpeza'>Limpeze de Pele</a></li>
+                        <li><a href='#massagem'>Massagem Modeladora</a></li>
+                        <li><a href='#peeling'>Peeling de Diamante</a></li>
+                        <li><a href='#drenagem'>Drenagem Linfática</a></li>
+                        <li><a href='#depilacao'>Depilação a Cera</a></li>
 
-            <div class="col-lg-3 col-sm-5">
-                <h5>Passeios</h5>
-                <ul class="list-unstyled">
-                    <li><a href='#'>Ciclovias</a></li>
-                    <li><a href='#'>Copacabana</a></li>
-                    <li><a href='#'>Cristo Redentor</a></li>
-                    <li><a href='#'>Pão de Açucar</a></li>
-                    <li><a href='#'>Maracanã</a></li>
-                    <li><a href='#'>Arcos da Lapa</a></li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-7">
+                    <h5>Estética Facial</h5>
+                    <ul class="">
+                        <li><a href='facial.html#sobrancelhaFioaFio'> Sobrancelha Fio a Fio</a></li>
+                        <li><a href='facial.html#designSobrancelha'>Design de Sobrancelha</a></li>
+                        <li><a href='facial.html#limpeza'>Limpeza de Pele</a></li>
+                        <li><a href='facial.html#peeling'>Peeling de Diamante</a></li>
+                        <li><a href='facial.html#drenagemFacial'>Drenagem Linfática Facial</a></li>
+                        <li><a href='facial.html#rejuvenescimento'>Rejuvenescimento Facial</a></li>
 
-            <div class="col-lg-3 col-sm-7">
-                <h5>Passeios Culturais</h5>
-                <ul class="list-unstyled">
-                    <li><a href='#'>Museus</a></li>
-                    <li><a href='#'>Feiras</a></li>
-                    <li><a href='#'>Bibliotecas</a></li>
-                    <li><a href='#'>Livrarias</a></li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
 
-            <div class="col-lg-3 col-sm-5">
-                <h5>Contato</h5>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-user"></i> Joana</li>
-                    <li><i class="fas fa-phone"></i> (99)99999-9999</li>
-                    <li><i class="fas fa-envelope-square"></i> <a href='mailto:popo@pb.dum.br'>popo@pb.dum.br</a>
-                    </li>
-                </ul>
+                <!--                <div class="col-lg-3 col-sm-5">-->
+                <!--                    <h5>Passeios</h5>-->
+                <!--                    <ul class="list-unstyled">-->
+                <!--                        <li><a href='#'>Ciclovias</a></li>-->
+                <!--                        <li><a href='#'>Copacabana</a></li>-->
+                <!--                        <li><a href='#'>Cristo Redentor</a></li>-->
+                <!--                        <li><a href='#'>Pão de Açucar</a></li>-->
+                <!--                        <li><a href='#'>Maracanã</a></li>-->
+                <!--                        <li><a href='#'>Arcos da Lapa</a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+
+                <!--                <div class="col-lg-3 col-sm-7">-->
+                <!--                    <h5>Passeios Culturais</h5>-->
+                <!--                    <ul class="list-unstyled">-->
+                <!--                        <li><a href='#'>Museus</a></li>-->
+                <!--                        <li><a href='#'>Feiras</a></li>-->
+                <!--                        <li><a href='#'>Bibliotecas</a></li>-->
+                <!--                        <li><a href='#'>Livrarias</a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fw fa-user"></i> Mari Barbosa</li>
+                        <li><i class="fas fw fa-phone"></i> (21)98372-8978</li>
+                        <li><i class="fas fw fa-envelope-square"></i> <a href='mailto:nalva-_-barbosa@hotmail.com'>nalva-_-barbosa@hotmail.com</a>
+                        </li>
+                        <li><i class="fab fw fa-instagram"></i> <a href='https://instagram.com/maribarbosapmu'>@maribarbosapmu</a></li>
+                        <li><i class="fab fw fa-facebook"></i> <a href='https://facebook.com/maribarbosapmu'>facebook.com/maribarbosapmu</a></li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

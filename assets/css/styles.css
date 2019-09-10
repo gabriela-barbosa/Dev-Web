@@ -59,6 +59,7 @@
     left: 16%;
 }
 
+
 .logo {
     width: 150px;
 }
@@ -144,19 +145,31 @@ padding: 30px 0; - top e bottom padding de 30px e
 color: #639bcf; - Azul
 */
 
+li {
+    color: grey !important;
+}
+
+li a {
+    color: grey !important;
+}
+
+
 .footer {
-    background-image: url(../images/footer.png);
+    background-image: url(../images/footer2.png);
     color: #efefef;
     padding: 30px 0;
 }
 
-.footer a {
-    color: #639bcf;
+.retangulo {
+    width: 100%;
+    height: 100%;
+    border-radius: 21px;
+    background: rgba(248, 249, 250, 0.9);
+    padding-left: 25px;
+    padding-top: 20px;
 }
 
-.footer a:hover {
-    color: #d8e6f3;
-}
+
 
 /* ---------------------------------------------------- */
 
