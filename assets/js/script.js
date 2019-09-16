@@ -2,14 +2,68 @@
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({boundary: 'window'});
+    $("#like").click(function (e) {
+        deuLike(e)
+    })
+     $("#dislike").click(function (e) {
+        deuDislike(e)
+    })
 
     $("#id-form").submit(function (e) {
         validaTudoFunction(e)
     })
 });
 
+function deuLike(e) {
+    e.preventDefault();
+    let like = $("#like");
+    let dislike = $("#dislike");
+    let labelLike = $("#label-like");
+    let labelDislike = $("#label-dislike");
+
+    if (like.hasClass("far fa-thumbs-up")) {
+        like.removeClass("far fa-thumbs-up");
+        like.addClass("fas fa-thumbs-up");
+        labelLike.text(parseInt(labelLike.text()) + 1);
+        if (dislike.hasClass("fas fa-thumbs-down")) {
+            dislike.removeClass("fas fa-thumbs-down");
+            dislike.addClass("far fa-thumbs-down");
+            labelDislike.text(parseInt(labelDislike.text()) - 1)
+        }
+
+    } else {
+        like.removeClass("fas fa-thumbs-up");
+        like.addClass("far fa-thumbs-up");
+        labelLike.text(parseInt(labelLike.text()) - 1);
+    }
+}
+
+function deuDislike(e) {
+    e.preventDefault();
+    let like = $("#like");
+    let dislike = $("#dislike");
+    let labelLike = $("#label-like");
+    let labelDislike = $("#label-dislike");
+
+    if (dislike.hasClass("far fa-thumbs-down")) {
+        dislike.removeClass("far fa-thumbs-down");
+        dislike.addClass("fas fa-thumbs-down");
+        labelDislike.text(parseInt(labelDislike.text()) + 1);
+        if (like.hasClass("fas fa-thumbs-up")) {
+            like.removeClass("fas fa-thumbs-up");
+            like.addClass("far fa-thumbs-up");
+            labelLike.text(parseInt(labelLike.text()) - 1)
+        }
+
+    } else {
+        dislike.removeClass("fas fa-thumbs-down");
+        dislike.addClass("far fa-thumbs-down");
+        labelDislike.text(parseInt(labelDislike.text()) - 1);
+    }
+}
+
 function validaTudoFunction(e) {
-        alert("Começando a Validação");
+    alert("Começando a Validação");
     e.preventDefault();
 
     let nome_valido = nomeValidoFunction();
