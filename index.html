@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/css/geral.css" rel="stylesheet">
+
+    <title>Mari Barbosa</title>
+</head>
+
+<body data-spy="scroll" data-target="#barra-navegacao" fixed-top>
+<nav id="barra-navegacao" class="navbar navbar-light bg-light navbar-expand-md fixed-top d-block">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Botão de navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-md-none mr-1 ml-1">
+            <a class="navbar-brand mx-auto" href="#">
+                <img class="logo" src="assets/images/cortado.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse botoes-inicio" id="menu">
+            <div class="navbar-nav mr-0 ml-auto">
+                <a class="nav-link nav-item" href="#">Home</a></li>
+                <div class="dropdown">
+                    <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Serviços</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="pages/facial/facial.html">Estética Facial</a>
+                        <a class="dropdown-item" href="#corporal">Estética Corporal</a>
+                        <a class="dropdown-item" href="#depilacaoCera">Depilação a Cera</a>
+                    </div>
+                </div>
+                <!--                <a class="nav-link nav-item" href="#servicos">Serviços</a></li>-->
+                <a class="nav-link nav-item" href="#galeria">Galeria</a></li>
+            </div>
+            <div class="d-none d-md-block mr-1 ml-1">
+                <a class="navbar-brand mx-auto" href="#">
+                    <img class="logo" src="assets/images/cortado.png" alt="logo">
+                </a>
+            </div>
+            <div class="navbar-nav ml-0 mr-auto">
+                <a class="nav-link nav-item" href="pages/sobre/sobre.html">Sobre nós</a></li>
+                <a class="nav-link nav-item" href="pages/contato/contato.html">Fale Conosco</a></li>
+            </div>
+        </div>
+
+        <div class="navbar-nav">
+            <div class="form-group has-search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" href="#admin"
+                        data-toggle="modal" type="submit">Admin
+                </button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0 d-md-none" href="#admin" data-toggle="modal"
+                        type="submit"><i class="fa fw fa-user" aria-hidden="true"></i></button>
+
+                <!--                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Login</button>-->
+                <!--                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Cadastrar</button>-->
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<header id="header" class="mb-4" style="margin-top: 120px;">
+
+    <div id="carouselInicio" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselInicio" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselInicio" data-slide-to="1"></li>
+            <li data-target="#carouselInicio" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/sobrancelha-nova.png" alt="Design de Sobrancelha">
+                <button class="botao btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">AGENDE
+                    AQUI
+                </button>
+
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/facial-nova.png" alt="Tratamentos Faciais">
+                <button class="botao btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">AGENDE
+                    AQUI
+                </button>
+
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/corporal-nova.png" alt="Tratamentos Corporais">
+                <button class="botao-corporal btn btn-outline-secondary my-2 my-sm-0 d-none d-md-block" type="submit">
+                    AGENDE AQUI
+                </button>
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselInicio" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselInicio" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</header>
+
+<div class="container mb-4">
+    <h4 id="procedimentos" class="mb-0 pt-4 pb-4">Procedimentos mais procurados:</h4>
+
+    <div class="row mb-4">
+        <div class="col-md-6 col-lg-4">
+            <div id="sobrancelhaFioaFio" class="card shadow mt-3">
+                <img class=" card-img-top" src="assets/images/eyebrow2.jpg" alt="Sobrancelha">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Sobrancelha Fio a Fio</h5>
+                        <p class="text-secondary font-weight-bold">Mais procurado</p>
+                    </div>
+                    <p class="card-text text-justify">A sobrancelha é redesenhada com a implementação de pigmentos
+                        orgânicos, que variam de acordo com cada caso. O resultado é uma sobrancelha definida e
+                        naturalmente bonita, com um design que dá mais personalidade à expressão facial.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm"
+                                onclick="location.href='facial.html#sobrancelhaFioaFio';">Mais informações...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div id="limpeza" class="card shadow mt-3">
+                <img class="card-img-top " src="assets/images/cleaning.jpg" alt="Limpeza de Pele">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Limpeza de Pele</h5>
+                        <p class="text-secondary font-weight-bold">Mais recomendado</p>
+                    </div>
+                    <p class="card-text text-justify">
+                        A limpeza de pele é um procedimento estético
+                        que tem como objetivo remover cravos e impurezas da pele. A limpeza de pele também remove o
+                        milium, que são pequenos cistos salientes causados pelo acúmulo de óleo e pele nos
+                        poros.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm" onclick="location.href='facial.html#limpeza'">
+                            Mais informações...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div id="massagem" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/massagem-modeladora.jpg"
+                     alt="Massagem Modeladora">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Massagem Modeladora</h5>
+                        <p class="text-secondary font-weight-bold">Modele o corpo</p>
+                    </div>
+                    <p class="card-text text-justify">A massagem modeladora é feita com movimentos mais
+                        fortes e profundos, com o intuito de atingir camadas mais profundas da pele. A massagem atua
+                        também na circulação, dessa forma, ela é eficiente contra a celulite.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div id="peeling" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/peeling.jpg" alt="Peeling">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Peeling de Diamante</h5>
+                        <p class="text-secondary font-weight-bold">Renove a pele</p>
+                    </div>
+                    <p class="card-text text-justify">O peeling de diamante é
+                        um tratamento estético que faz uma esfoliação profunda da pele, retirando as células mortas
+                        da
+                        camada mais superficial, sendo muito eficiente para retirar as manchas e combater as rugas
+                        porque estimula a produção de colágeno e elastina, que são fundamentais para manter a pele
+                        firme
+                        e uniforme.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm" onclick="location.href='facial.html#peeling'">
+                            Mais informações...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div id="drenagem" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/drenagem%20(1).jpg" alt="Drenagem">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Drenagem Linfática</h5>
+                        <p class="text-secondary font-weight-bold">Retenção de líquido nunca mais</p>
+                    </div>
+                    <p class="card-text text-justify">A drenagem linfática é uma técnica de massagem que tem por
+                        objetivo estimular o sistema linfático - uma rede complexa de vasos que movem fluidos pelo
+                        corpo
+                        - a trabalhar de forma mais acelerada. Entre os principais benefícios do método estão a
+                        redução
+                        da retenção de líquido, ativação da circulação sanguínea, combate à celulite e até o
+                        relaxamento
+                        corporal.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div id="depilacao" class="card shadow mt-3">
+                <img class="card-img-top" src="assets/images/depilacao.jpg" alt="Depilação">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h5>Depilação a Cera</h5>
+                        <p class="text-secondary font-weight-bold">Pele livre de pelos</p>
+                    </div>
+                    <p class="card-text text-justify">A depilação a cera proporciona um toque mais suave e delicado
+                        da
+                        pele. A cera faz a retirada do fio pela sua raiz. Ao atingir a raiz, a
+                        enfraquece e proporciona o prolongamento do processo de crescimento, que pode chegar a durar
+                        até
+                        25 dias. Ela também passa a enfraquecer os pelos, diminuindo sua quantidade e deixando os
+                        fios
+                        cada vez mais finos.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="text-right">
+                        <button class="btn btn-outline-secondary btn-sm">Mais informações...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    <div class="row">-->
+    <!--        <div class="d-md-flex flex-md-equal py-4 col-12 p-0 w-100 my-md-3">-->
+    <!--            <div class="bg-dark pt-3 w-100 pt-md-5 text-center text-white overflow-hidden" style="border-radius: 21px;">-->
+    <!--                <div class="my-2 py-2">-->
+    <!--                    <h2 class="display-5">Agende Gratuitamente uma Avaliação</h2>-->
+    <!--                    <p class="lead">Clique no botão abaixo para preencher o formulário de agendamento.</p>-->
+    <!--&lt;!&ndash;                    <form>&ndash;&gt;-->
+    <!--&lt;!&ndash;                        <div class="row mx-4 my-3">&ndash;&gt;-->
+    <!--&lt;!&ndash;                            <div class="col">&ndash;&gt;-->
+    <!--&lt;!&ndash;                                <input type="text" class="form-control" placeholder="Digite o seu nome">&ndash;&gt;-->
+    <!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+    <!--&lt;!&ndash;                            <div class="col">&ndash;&gt;-->
+    <!--&lt;!&ndash;                                <input type="email" class="form-control" placeholder="Digite o seu e-mail">&ndash;&gt;-->
+    <!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+    <!--&lt;!&ndash;                            <div class="col">&ndash;&gt;-->
+    <!--&lt;!&ndash;                                <input type="text" class="form-control" placeholder="Digite o seu telefone">&ndash;&gt;-->
+    <!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+    <!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+    <!--                        <button type="button" class="btn btn-primary btn-lg" >Agende aqui</button>-->
+    <!--                    </form>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="row">
+        <div class="d-md-flex flex-md-equal py-4 col-12 p-0 w-100 my-md-3">
+            <div class="bg-dark pt-3 w-100 pt-md-5 text-center text-white overflow-hidden" style="border-radius: 21px;">
+                <div class="my-2 py-2">
+                    <h2 class="display-5">Agende Gratuitamente uma Avaliação</h2>
+                    <p class="lead">Preencha os dados que, assim que possível, entraremos em contato</p>
+                    <form>
+                        <div class="row mx-4 my-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Digite o seu nome">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Digite o seu e-mail">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Digite o seu telefone">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg">Agende aqui</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="shadow-sm retangulo">
+            <div class="row">
+                <div class="col-lg-3 col-sm-7">
+                    <h5>Estética Facial</h5>
+                    <ul class="">
+                        <li><a href='pages/facial/facial.html#sobrancelhaFioaFio'> Sobrancelha Fio a Fio</a></li>
+                        <li><a href='pages/facial/facial.html#designSobrancelha'>Design de Sobrancelha</a></li>
+                        <li><a href='pages/facial/facial.html#limpeza'>Limpeza de Pele</a></li>
+                        <li><a href='pages/facial/facial.html#peeling'>Peeling de Diamante</a></li>
+                        <li><a href='pages/facial/facial.html#drenagemFacial'>Drenagem Linfática Facial</a></li>
+                        <li><a href='pages/facial/facial.html#rejuvenescimento'>Rejuvenescimento Facial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-7">
+                    <h5>Estética Corporal</h5>
+                    <ul class="">
+                        <li><a href='#modeladora'>Massagem Modeladora</a></li>
+                        <li><a href='#massagemRelaxante'>Massagem Relaxante</a></li>
+                        <li><a href='#drenagemCorporal'>Drenagem Linfática Corporal</a></li>
+                        <li><a href='#drenagemPos'>Drenagem Pós-Operatório</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-7">
+                    <h5>Depilação a Cera</h5>
+                    <ul class="">
+                        <li><a href='#Buço'>Buço</a></li>
+                        <li><a href='#perna'>Pernas</a></li>
+                        <li><a href='#axilas'>Axilas</a></li>
+                        <li><a href='#virilha'>Virilha</a></li>
+                        <li><a href='#nadegas'>Nádegas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-5">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fw fa-user"></i> Mari Barbosa</li>
+                        <li><i class="fas fw fa-phone"></i> (21)98372-8978</li>
+                        <li><i class="fas fw fa-envelope-square"></i> <a href='mailto:nalva-_-barbosa@hotmail.com'>nalva-_-barbosa@hotmail.com</a>
+                        </li>
+                        <li><i class="fab fw fa-instagram"></i> <a href='https://instagram.com/maribarbosapmu'>@maribarbosapmu</a>
+                        </li>
+                        <li><i class="fab fw fa-facebook"></i> <a href='https://facebook.com/maribarbosapmu'>@maribarbosapmu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="admin">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title">Cadastro de Serviço</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="id-form" action="">
+                        <fieldset class="form-group">
+                            <legend class="font-weight-bold">Informações do Serviço</legend>
+
+                            <div class="form-group row">
+                                <label for="nome"
+                                       class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Nome</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control form-control-sm" id="nome"
+                                           placeholder="Informe o nome do serviço">
+                                    <div class="invalid-feedback">
+                                        Este campo deve ser informado.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tipo"
+                                       class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Tipo</label>
+                                <div class="col-lg-10">
+                                    <select class="form-control form-control-sm" id="tipo">
+                                        <option value="">--- selecione um tipo ---</option>
+                                        <option value="1">Estética Facial</option>
+                                        <option value="2">Estética Corporal</option>
+                                        <option value="3">Depilação</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Este campo deve ser informado.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Prazo
+                                    para resultado</label>
+                                <div class="col-lg-10">
+                                    <div class="form-check custom-control custom-radio">
+                                        <input id="curto-prazo" type="radio" name="prazo" value="c"
+                                               class="custom-control-input">
+                                        <label for="curto-prazo" class="custom-control-label">
+                                            Curto Prazo
+                                        </label>
+                                    </div>
+                                    <div class="form-check custom-control custom-radio">
+                                        <input id="longo-prazo" type="radio" name="prazo" value="l"
+                                               class="custom-control-input">
+                                        <label for="longo-prazo" class="custom-control-label">
+                                            Longo Prazo
+                                        </label>
+                                    </div>
+                                    <div id="prazo-feedback" class="invalid-feedback">
+                                        Este campo deve ser informado.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="descricao"
+                                       class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Descrição</label>
+                                <div class="col-lg-10">
+                                    <textarea type="text" class="form-control form-control-sm" id="descricao"
+                                              rows="3" placeholder="Digite a descrição"></textarea>
+                                    <div class="invalid-feedback">
+                                        Este campo deve ser informado.
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group" style="margin-bottom: 0px;">
+                            <legend class="font-weight-bold">Informações Adicionais</legend>
+                            <div class="form-group row">
+                                <label for="caminho-foto"
+                                       class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Caminho
+                                    para a foto</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control form-control-sm" id="caminho-foto"
+                                           placeholder="Ex: C:\Users\user\Images\foto.jpg">
+                                    <div class="invalid-feedback">
+                                        Este campo deve ser informado.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Formas
+                                    de Pagamento</label>
+                                <div class="col-lg-10">
+                                    <div class="form-check custom-control custom-checkbox">
+                                        <input id="credito" type="checkbox" name="credito" class="custom-control-input pagamento">
+                                        <label for="credito" class="custom-control-label">
+                                            Cartão de Crédito
+                                        </label>
+                                    </div>
+                                    <div class="form-check custom-control custom-checkbox">
+                                        <input id="debito" type="checkbox" name="debito"
+                                               class="custom-control-input pagamento">
+                                        <label for="debito" class="custom-control-label">
+                                            Cartão de Débito
+                                        </label>
+                                    </div>
+                                    <div class="form-check custom-control custom-checkbox">
+                                        <input id="boleto" type="checkbox" name="boleto"
+                                               class="custom-control-input pagamento">
+                                        <label for="boleto" class="custom-control-label">
+                                            Boleto Bancário
+                                        </label>
+                                    </div>
+                                    <div id="feedback-pagamento" class="invalid-feedback">
+                                        Este campo deve ser informado.
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group row">
+                            <div class="col-lg-12 enviar">
+                                <button type="submit" class="btn btn-primary text-center">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.3.1.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
