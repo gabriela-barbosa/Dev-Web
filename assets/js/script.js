@@ -2,77 +2,135 @@
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({boundary: 'window'});
-    $("#like").click(function (e) {
-        deuLike(e)
+
+    //sobrancelha
+
+    $("#like-sobrancelha").click(function (e) {
+        deuLike(e, "sobrancelha")
     })
-    $("#dislike").click(function (e) {
-        deuDislike(e)
+
+
+    $("#dislike-sobrancelha").click(function (e) {
+        deuDislike(e, "sobrancelha")
     })
+
+    //limpeza
+
+    $("#like-limpeza").click(function (e) {
+        deuLike(e, "limpeza")
+    })
+
+
+    $("#dislike-limpeza").click(function (e) {
+        deuDislike(e, "limpeza")
+    })
+
+    //massagem
+
+    $("#like-massagem").click(function (e) {
+        deuLike(e, "massagem")
+    })
+
+    $("#dislike-massagem").click(function (e) {
+        deuDislike(e, "massagem")
+    })
+
+
+    //peeling
+
+    $("#like-peeling").click(function (e) {
+        deuLike(e, "peeling")
+    })
+    $("#dislike-peeling").click(function (e) {
+        deuDislike(e, "peeling")
+    })
+
+    //drenagem
+
+    $("#like-drenagem").click(function (e) {
+        deuLike(e, "drenagem")
+    })
+    $("#dislike-drenagem").click(function (e) {
+        deuDislike(e, "drenagem")
+    })
+
+    //depilacao
+
+    $("#like-depilacao").click(function (e) {
+        deuLike(e, "depilacao")
+    })
+    $("#dislike-depilacao").click(function (e) {
+        deuDislike(e, "depilacao")
+    })
+
 
     $("#id-form").submit(function (e) {
         validaTudoFunction(e)
     })
+
+
 });
 
-function deuLike(e) {
+function deuLike(e, card) {
     e.preventDefault();
-    let like = $("#like");
-    let dislike = $("#dislike");
-    let numeroLike = parseInt($('#label-like').data('like'));
+    console.log(e)
+    let like = $("#like-" + card);
+    let dislike = $("#dislike-" + card);
+    let numeroLike = parseInt($('#label-like-' + card).data('like'));
     if (like.hasClass("far fa-thumbs-up")) {
         like.removeClass("far fa-thumbs-up");
         like.addClass("fas fa-thumbs-up");
-        $('#label-like').text(numeroLike + 1);
-        $('#label-like').data('like', numeroLike + 1)
+        $('#label-like-' + card).text(numeroLike + 1);
+        $('#label-like-' + card).data('like', numeroLike + 1)
 
         // labelLike.text(parseInt(labelLike.text()) + 1);
         if (dislike.hasClass("fas fa-thumbs-down")) {
             dislike.removeClass("fas fa-thumbs-down");
             dislike.addClass("far fa-thumbs-down");
-            let numeroDislike = parseInt($('#label-dislike').data('dislike')) - 1;
-            $('#label-dislike').text(numeroDislike);
-            $('#label-dislike').data('dislike', numeroDislike)
+            let numeroDislike = parseInt($('#label-dislike-' + card).data('dislike')) - 1;
+            $('#label-dislike-' + card).text(numeroDislike);
+            $('#label-dislike-' + card).data('dislike', numeroDislike)
 
             // labelDislike.text(parseInt(labelDislike.text()) - 1)
         }
     } else {
         like.removeClass("fas fa-thumbs-up");
         like.addClass("far fa-thumbs-up");
-        $('#label-like').data('like', numeroLike - 1)
-        $('#label-like').text(numeroLike - 1);
+        $('#label-like-' + card).data('like', numeroLike - 1)
+        $('#label-like-' + card).text(numeroLike - 1);
     }
 }
 
-function deuDislike(e) {
+function deuDislike(e, cardName) {
     e.preventDefault();
-    let like = $("#like");
-    let dislike = $("#dislike");
+    let like = $("#like-" + cardName);
+    let dislike = $("#dislike-" + cardName);
     // let labelLike = $("#label-like");
     // let labelDislike = $("#label-dislike");
-    let numeroDislike = parseInt($('#label-dislike').data('dislike'));
+    let numeroDislike = parseInt($('#label-dislike-' + cardName).data('dislike'));
 
 
     if (dislike.hasClass("far fa-thumbs-down")) {
         dislike.removeClass("far fa-thumbs-down");
         dislike.addClass("fas fa-thumbs-down");
-        $('#label-dislike').text(numeroDislike + 1);
-        $('#label-dislike').data('dislike', numeroDislike + 1)
+        $('#label-dislike-' + cardName).text(numeroDislike + 1);
+        $('#label-dislike-' + cardName).data('dislike', numeroDislike + 1)
 
         // labelDislike.text(parseInt(labelDislike.text()) + 1);
         if (like.hasClass("fas fa-thumbs-up")) {
             like.removeClass("fas fa-thumbs-up");
             like.addClass("far fa-thumbs-up");
-            let numeroLike = parseInt($('#label-like').data('like')) - 1;
-            $('#label-like').text(numeroLike);
-            $('#label-like').data('like', numeroLike)
+            let numeroLike = parseInt($('#label-like-' + cardName).data('like')) - 1;
+            $('#label-like-' + cardName).text(numeroLike);
+            $('#label-like-' + cardName).data('like', numeroLike)
 
         }
 
     } else {
         dislike.removeClass("fas fa-thumbs-down");
         dislike.addClass("far fa-thumbs-down");
-        $('#label-dislike').text(numeroDislike - 1);
-        $('#label-dislike').data('dislike', numeroDislike - 1)
+        $('#label-dislike-' + cardName).text(numeroDislike - 1);
+        $('#label-dislike-' + cardName).data('dislike', numeroDislike - 1)
 
     }
 }
