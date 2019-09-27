@@ -15,6 +15,24 @@
     left: 16%;
 }
 
+.botao-like-deslike {
+    background-color: transparent;
+    box-shadow: none;
+    color: grey !important;
+    outline: none;
+    border: 0px transparent;
+    box-sizing: none;
+    background-color: transparent;
+}
+
+botao-like-deslike:focus {
+
+}
+
+.botao-like-deslike:hover {
+    cursor: pointer;
+}
+
 .media img {
     width: 180px;
     margin-bottom: 15px;

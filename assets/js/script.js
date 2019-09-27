@@ -5,7 +5,7 @@ $(function () {
     $("#like").click(function (e) {
         deuLike(e)
     })
-     $("#dislike").click(function (e) {
+    $("#dislike").click(function (e) {
         deuDislike(e)
     })
 
@@ -18,23 +18,28 @@ function deuLike(e) {
     e.preventDefault();
     let like = $("#like");
     let dislike = $("#dislike");
-    let labelLike = $("#label-like");
-    let labelDislike = $("#label-dislike");
-
+    let numeroLike = parseInt($('#label-like').data('like'));
     if (like.hasClass("far fa-thumbs-up")) {
         like.removeClass("far fa-thumbs-up");
         like.addClass("fas fa-thumbs-up");
-        labelLike.text(parseInt(labelLike.text()) + 1);
+        $('#label-like').text(numeroLike + 1);
+        $('#label-like').data('like', numeroLike + 1)
+
+        // labelLike.text(parseInt(labelLike.text()) + 1);
         if (dislike.hasClass("fas fa-thumbs-down")) {
             dislike.removeClass("fas fa-thumbs-down");
             dislike.addClass("far fa-thumbs-down");
-            labelDislike.text(parseInt(labelDislike.text()) - 1)
-        }
+            let numeroDislike = parseInt($('#label-dislike').data('dislike')) - 1;
+            $('#label-dislike').text(numeroDislike);
+            $('#label-dislike').data('dislike', numeroDislike)
 
+            // labelDislike.text(parseInt(labelDislike.text()) - 1)
+        }
     } else {
         like.removeClass("fas fa-thumbs-up");
         like.addClass("far fa-thumbs-up");
-        labelLike.text(parseInt(labelLike.text()) - 1);
+        $('#label-like').data('like', numeroLike - 1)
+        $('#label-like').text(numeroLike - 1);
     }
 }
 
@@ -42,23 +47,33 @@ function deuDislike(e) {
     e.preventDefault();
     let like = $("#like");
     let dislike = $("#dislike");
-    let labelLike = $("#label-like");
-    let labelDislike = $("#label-dislike");
+    // let labelLike = $("#label-like");
+    // let labelDislike = $("#label-dislike");
+    let numeroDislike = parseInt($('#label-dislike').data('dislike'));
+
 
     if (dislike.hasClass("far fa-thumbs-down")) {
         dislike.removeClass("far fa-thumbs-down");
         dislike.addClass("fas fa-thumbs-down");
-        labelDislike.text(parseInt(labelDislike.text()) + 1);
+        $('#label-dislike').text(numeroDislike + 1);
+        $('#label-dislike').data('dislike', numeroDislike + 1)
+
+        // labelDislike.text(parseInt(labelDislike.text()) + 1);
         if (like.hasClass("fas fa-thumbs-up")) {
             like.removeClass("fas fa-thumbs-up");
             like.addClass("far fa-thumbs-up");
-            labelLike.text(parseInt(labelLike.text()) - 1)
+            let numeroLike = parseInt($('#label-like').data('like')) - 1;
+            $('#label-like').text(numeroLike);
+            $('#label-like').data('like', numeroLike)
+
         }
 
     } else {
         dislike.removeClass("fas fa-thumbs-down");
         dislike.addClass("far fa-thumbs-down");
-        labelDislike.text(parseInt(labelDislike.text()) - 1);
+        $('#label-dislike').text(numeroDislike - 1);
+        $('#label-dislike').data('dislike', numeroDislike - 1)
+
     }
 }
 
